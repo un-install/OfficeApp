@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "9d46a3d7-ef08-444d-945e-24b1d15d4f4b",
+		"name": "officeApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllOffices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:21122/office/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21122",
+					"path": [
+						"office",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findOfficeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:21122/office/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21122",
+					"path": [
+						"office",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertOffice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"city\": \"string\",\r\n  \"mgr\": 101,\r\n  \"office\": 60,\r\n  \"region\": \"string\",\r\n  \"sales\": 103,\r\n  \"target\": 0\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:21122/office/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21122",
+					"path": [
+						"office",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateOffice",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"city\": \"SF\",\r\n  \"mgr\": 103,\r\n  \"office\": 60,\r\n  \"region\": \"CA\",\r\n  \"sales\": 10000,\r\n  \"target\": 20000\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:21122/office/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21122",
+					"path": [
+						"office",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOffice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
